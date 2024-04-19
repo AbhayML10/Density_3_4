@@ -1,0 +1,34 @@
+Model 1 (Density Model) (Classification)
+    Dataset - 
+        This Dataset consists of all the images regardless of image view and abnormality type..... this will be a classification Dataset
+        And will classify the images in density 1 2 3 4 .... This dataset will be made from full mammogram image
+
+Model 2 (Segmentation/ Bound box model/ Crop Image)
+    Dataset - 
+        This dataset consists of all the images regardless of image view and abnormality type..... this will consist of full mammogram image
+        with combined abnormalities masks. This model will give ouput as the marked lesions / abnormalities on the image.
+
+Model 3 (Abnormality type model) (Binary)
+    Dataset -
+        This dataset consists of the cropped images of each lesion...... this will be a binary model and will tell if the abnormality is mass
+        type or calc type.... this model will be trained on cropped images.
+
+Model 4 (Mass Shape Model) (Classification)
+    Dataset - 
+        This dataset will contain cropped images of only mass abnormality type... and the dataset will be classified into all the mass shapes
+        present in the data and will be passed into the model to train it for classifying the mass shape.
+
+Model 5 (Mass Margin Model) (Classification)
+    Dataset - 
+        This dataset will contain cropped images of only mass abnormality type... and the dataset will be classified into all the mass margins
+        present in the data and will be passed into the model to train it for classifying the mass margin.
+
+Model 6 (calc Type Model) (Classification)
+    Dataset - 
+        This dataset will contain cropped images of only calc abnormality type... and the dataset will be classified into all the calc types
+        present in the data and will be passed into the model to train it for classifying the calc types.
+
+Model 7 (calc distribution Model) (Classification)
+    Dataset - 
+        This dataset will contain cropped images of only calc abnormality type... and the dataset will be classified into all the calc
+        distribution present in the data and will be passed into the model to train it for classifying the calc distribution.
